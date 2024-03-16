@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    build: .
+    restart: always
+    command: neli-backoffice --config ./docker.ini
+    volumes:
+      - .:/go/src/gitlab.com/arnaud-web/neli-backoffice
+    ports:
+      - "4000:4000"

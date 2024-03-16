@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    {{ template "head"}}
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img id="logo" src="/static/img/logo.png" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-20">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6">
+                <form id="form" class=" m-auto" data-url="{{api}}/auth/login" method="POST">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Login</label>
+                        <input type="text" class="form-control" id="login" name="login" placeholder="Login" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary m-auto">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{ template "footer"}}
+
+</body>
+
+</html>

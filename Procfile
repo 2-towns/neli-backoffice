@@ -1,0 +1,1 @@
+web: neli-backoffice --config ./heroku.ini --port=$PORT

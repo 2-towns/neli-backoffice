@@ -1,0 +1,83 @@
+{{define "navbarSuperAdmin"}}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img id="logo" src="/static/img/logo.png" />
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li {{if eq . "admin"}}class="nav-item active" {{else}}class="nav-item" {{end}}>
+                <a class="nav-link" {{if eq . "admin"}}href="#" {{else}}href="/admin" {{end}}>
+                    Administrators
+                </a>
+            </li>
+            <li {{if eq . "max-duration"}}class="nav-item active" {{else}}class="nav-item" {{end}}>
+                <a class="nav-link" {{if eq . "max-duration"}}href="#" {{else}}href="/max-duration" {{end}}>
+                    Max duration
+                </a>
+            </li>
+            <li {{if eq . "cleaning"}}class="nav-item active" {{else}}class="nav-item" {{end}}>
+                <a class="nav-link" {{if eq . "cleaning"}}href="#" {{else}}href="/cleaning" {{end}}>
+                   Cleaning
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+{{end}}
+
+<!---->
+
+{{define "navbarAdmin"}}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img id="logo" src="/static/img/logo.png" />
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li {{if eq . "leader"}}class="nav-item active" {{else}}class="nav-item" {{end}}>
+                <a class="nav-link" {{if eq . "leader"}}href="#" {{else}}href="/leader" {{end}}>
+                    Leaders
+                </a>
+            </li>
+            <li {{if eq . "content"}}class="nav-item active" {{else}}class="nav-item" {{end}}>
+                <a class="nav-link" {{if eq . "content"}}href="#" {{else}}href="/content" {{end}}>
+                    Content
+                </a>
+            </li>
+            <li {{if eq . "info"}}class="nav-item active" {{else}}class="nav-item" {{end}}>
+                <a class="nav-link" {{if eq . "info"}}href="#" {{else}}href="/info" {{end}}>
+                    Info
+                </a>
+            </li>
+            <li {{if eq . "password"}}class="nav-item active" {{else}}class="nav-item" {{end}}>
+                <a class="nav-link" {{if eq . "password"}}href="#" {{else}}href="/password" {{end}}>
+                    Password
+                </a>
+            </li>
+            <li {{if eq . "reset"}}class="nav-item active" {{else}}class="nav-item" {{end}}>
+                <a class="nav-link" {{if eq . "reset"}}href="#" {{else}}href="/reset" {{end}}>
+                    Reset password
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+{{end}}

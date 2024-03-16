@@ -1,0 +1,24 @@
+{{define "footer"}}
+
+<footer>
+
+    <div id="alert" class="alert alert-danger fade show" role="alert">
+        <button id="alert-close" type="button" class="close white" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <span id="alert-content"></span>
+    </div>
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/main.js"></script>
+
+    <!-- -->
+
+    {{ template "js"}}
+
+
+</footer>
+
+{{end}}

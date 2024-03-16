@@ -1,0 +1,148 @@
+*,
+:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+body {
+    padding-bottom: 30px;
+}
+
+button:hover,
+a:hover {
+    cursor: pointer;
+}
+
+a.disabled:hover {
+    cursor: default;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mw-320 {
+    max-width: 320px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.white {
+    color: white !important;
+}
+
+#alert {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    margin-bottom: 0px;
+    color: white;
+    display: none;
+    border: none;
+    border-radius: 0px;
+    z-index: 9;
+}
+
+a:not([href]):not([tabindex]).disabled {
+    color: grey;
+}
+
+nav.navbar {
+    min-height: 56px;
+    background: linear-gradient(to right, #FF7A40, #F0282C);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+    cursor: text;
+}
+
+body table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child:before, table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
+    background-color: #fd6445;
+}
+
+.btn-primary {
+    background-color: #fd6445;
+    border: none;
+    box-shadow: none !important;
+}
+
+.page-item.active .page-link,
+.badge-primary {
+    background-color: #FD6445;
+    border-color: #FD6445;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:disabled {
+    background-color: #E12525;
+}
+
+#logo {
+    border-radius: 120px;
+    margin-right: 10px;
+}
+
+.form-control:focus {
+    border-color: #fd6445;
+}
+
+@media screen and (max-width: 767px) {
+    .btn-primary {
+        margin: auto;
+        display: block;
+    }
+
+    body div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+.fas.fa-sign-out-alt {
+    font-size: 23px;
+}
+
+table td {
+    word-break: break-all;
+}
+
+.form-control[readonly] {
+    background: white;
+}
+
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.highlighted.active,
+.datepicker table tr td.active.highlighted:active,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active.active.focus, .datepicker table tr td.active.active:focus, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active.focus, .datepicker table tr td.active.highlighted.active:focus, .datepicker table tr td.active.highlighted.active:hover, .datepicker table tr td.active.highlighted:active.focus, .datepicker table tr td.active.highlighted:active:focus, .datepicker table tr td.active.highlighted:active:hover, .datepicker table tr td.active:active.focus, .datepicker table tr td.active:active:focus, .datepicker table tr td.active:active:hover{
+    background: #E12525 !important;
+}

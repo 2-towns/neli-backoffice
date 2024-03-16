@@ -1,0 +1,30 @@
+<html>
+
+<head>
+        {{ template "head"}}
+</head>
+
+<body>
+
+        {{ template "navbarAdmin" "reset"}}
+
+        <div class="container mt-20">
+                <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6">
+
+                                <form id="form" class="mw-320 m-auto" data-url="{{api}}/auth/reset-password" method="POST">
+                                        <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input type="text" class="form-control" id="email" name="login" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                        </div>
+                </div>
+        </div>
+
+        {{ template "footer"}}
+
+</body>
+
+</html>
